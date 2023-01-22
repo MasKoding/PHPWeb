@@ -3,7 +3,7 @@
 ## Halaman Login.php
 Halaman login untuk melakukan authentikasi dan verifikasi user yang login
 
-```
+```php
     <?php
 
 include "header.php";
@@ -90,7 +90,7 @@ Output :
 ## Halaman Home.php
 Setelah berhasil login, akan di arahkan ke halaman dashboard atau home
 
-```
+```php
 <?php 
    //membuat session awal wajib pakai session_start()
    session_start();
