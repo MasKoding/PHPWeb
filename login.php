@@ -1,6 +1,7 @@
 <?php
+
 include "header.php";
-// include "nav.php";
+
 ?>
 
 <div class="container">
@@ -34,8 +35,10 @@ include "header.php";
     </div>
 
     <?php 
-              
+          
+        //   
                 if(isset($_POST['submit'])){
+                //    perintah dibawah untuk membuat session 
                     session_start();
                     // encrypt password kita
                     $username = $_POST['email'];
@@ -43,7 +46,9 @@ include "header.php";
                     // if else
                     
                     if($username =="admin@admin.com" && $password==123){
+                        // $_SESSION['user'] = variable session untuk menyimpan data user
                         $_SESSION['user']='admin';
+                        // redirect ke halaman home jika berhasil
                         header('Location: home.php');
 
                     }else{

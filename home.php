@@ -1,6 +1,7 @@
 <?php 
    //membuat session awal wajib pakai session_start()
    session_start();
+//    jika tidak ada variable session user maka kembalikan ke halaman login
    if(!isset($_SESSION['user'])){
         header('Location: login.php');
 
